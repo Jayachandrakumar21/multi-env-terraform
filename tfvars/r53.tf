@@ -1,3 +1,5 @@
+#created by: Jayachandra kumar
+
 resource "aws_route53_record" "expense" {
   count   = length(var.instances)
   zone_id = var.zone_id
